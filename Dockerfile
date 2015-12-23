@@ -14,4 +14,4 @@ COPY lighttpd.conf /lighttpd.conf
 VOLUME /cfg
 
 ENTRYPOINT ["/wrapper.sh"]
-CMD ["lighttpd", "-f", "/lighttpd.conf"]
+CMD ["lighttpd", "-D", "-f", "/lighttpd.conf"]
